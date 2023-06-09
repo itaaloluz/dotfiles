@@ -28,11 +28,18 @@ Para utilizar meus dotfiles, siga as etapas abaixo:
 ## Arquivos Incluídos
 
 - `.config`: Arquivos de configurações dos meus aplicativos
+  - `dunst`: Arquivo de configuração do dunst
+  - `fontconfig`: Arquivo de configuração das fontes
   - `i3`: Arquivo de configuração do meu i3wm
-  - `polybar`: Arquivo de configuração da polybar
   - `kitty`: Arquivo de configuração do emulador de terminal kitty
+  - `picom`: Arquivo de configuração do compositor de janelas picom
+  - `polybar`: Arquivo de configuração da polybar
+  - `ranger`: Arquivo de configuração do gerenciador de arquivos ranger
+  - `rofi`: Arquivo de configuração do lançador de aplicativos rofi
 - `.scripts`: Scripts em ShellScript personalizados que utilizo
-- `.bashrc`: Configurações para o shell Bash
+  - `info`: Arquivos de scripts de informações adicionais
+  - `system`: Arquivos de scripts relacionados ao sistema
+- `.bashrc`: Configurações para o Shell Bash
 
 ## Contribuição
 
