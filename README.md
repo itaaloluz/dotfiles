@@ -6,6 +6,8 @@
 
 Este repositório contém minhas configurações pessoais do sistema (dotfiles). Eles incluem arquivos de configuração para várias ferramentas e aplicativos que uso regularmente
 
+![Captura de tela do meu sistema](.images/captura-de-tela-09-06-23-20-13-11.png)
+
 ## Como usar
 
 Para utilizar meus dotfiles, siga as etapas abaixo:
@@ -40,6 +42,25 @@ Para utilizar meus dotfiles, siga as etapas abaixo:
   - `info`: Arquivos de scripts de informações adicionais
   - `system`: Arquivos de scripts relacionados ao sistema
 - `.bashrc`: Configurações para o Shell Bash
+
+## Sofwares que utilizo
+
+- **Dunst**: Um notificador de desktop altamente personalizável para sistemas Linux
+- **Kitty**: Um emulador de terminal de código aberto e altamente configurável, com suporte a renderização de texto e imagens
+- **Picom**: Um compositor de janelas leve e rápido, que adiciona efeitos de transparência e sombras nas janelas do sistema
+- **Polybar**: Uma barra de status altamente personalizável para ambientes de desktop, exibindo informações como data/hora, uso de CPU, notificações, entre outros
+- **Ranger**: Um gerenciador de arquivos em modo texto para o terminal, com uma interface intuitiva e recursos avançados, como visualização de arquivos e navegação rápida
+- **Rofi**: Um seletor de aplicativos e janelas, que permite alternar entre aplicativos abertos e lançar programas de forma rápida
+- **htop**: Uma ferramenta de monitoramento de sistema interativa para o terminal, exibindo informações sobre o uso de recursos, como CPU, memória e processos em execução
+- **Visual Studio Code**: Um poderoso editor de código-fonte desenvolvido pela Microsoft, com suporte a várias linguagens de programação, depuração e integração com controle de versão
+- **GIMP**: Um editor de imagens gratuito e de código aberto, que oferece uma ampla gama de recursos para edição, retoque e criação de imagens
+- **Google Chrome**: Um navegador da web desenvolvido pelo Google, conhecido por sua velocidade, segurança e suporte a extensões
+- **Vim**: Um editor de texto altamente configurável e poderoso, disponível em vários sistemas operacionais, com uma grande comunidade de usuários e suporte a plug-ins
+- **pactl**: Uma ferramenta de linha de comando para controlar o servidor de som PulseAudio no Linux, permitindo o gerenciamento de dispositivos de áudio e ajuste de configurações
+- **brightnessctl**: Uma ferramenta de linha de comando para ajustar o brilho da tela em sistemas Linux
+- **maim**: Uma ferramenta de captura de tela para o Linux, que permite capturar imagens de tela inteira, áreas específicas ou janelas individuais
+- **xclip**: Uma ferramenta de linha de comando para manipulação de área de transferência, permitindo copiar e colar texto e conteúdo entre diferentes aplicativos
+- **xdotool**: Uma ferramenta de automação de tarefas no Linux, que permite simular eventos do mouse e do teclado, além de manipular janelas e interagir com aplicativos
 
 ## Contribuição
 
