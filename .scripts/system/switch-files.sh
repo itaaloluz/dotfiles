@@ -6,13 +6,14 @@ DMEDITOR="code"
 # You can edit this list to add/remove config files.
 declare -a options=(
     "i3 - $HOME/.config/i3/config"
-    "bash - $HOME/.bashrc"
-    "picom - $HOME/.config/picom/picom.conf"
+    "scripts - $HOME/.scripts"
     "kitty - $HOME/.config/kitty/kitty.conf"
     "polybar - $HOME/.config/polybar"
-    "ranger - $HOME/.config/ranger/rc.conf"
     "rofi - $HOME/.config/rofi"
-    "quit"
+    "picom - $HOME/.config/picom/picom.conf"
+    "ranger - $HOME/.config/ranger/rc.conf"
+    "bash - $HOME/.bashrc"
+    "Fechar"
 )
 
 # Piping the above array into dmenu.
@@ -20,7 +21,7 @@ declare -a options=(
 choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i 20 -p ' Editar ')
 
 # What to do when/if we choose 'quit'.
-if [[ "$choice" == "quit" ]]; then
+if [[ "$choice" == "fechar" ]]; then
     echo "Program terminated." && exit 1
 
 # What to do when/if we choose a file to edit.

@@ -6,11 +6,11 @@ maximum=100
 minimum=$increase_on
 
 get_volume() {
-    pactl list sinks | grep 'Volume:' | awk 'NR==1{gsub(/[%|]/,""); print $5}'
+    pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]{1,3}(?=%)' | head -1
 }
 
 get_mute() {
-    pactl list sinks | grep 'Mute:' | awk '{print $2}'
+    pactl get-sink-mute @DEFAULT_SINK@ | grep -Po '(?<=Mute: )(yes|no)'
 }
 
 increase() {
