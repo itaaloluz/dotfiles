@@ -61,6 +61,9 @@ Para utilizar meus dotfiles, siga as etapas abaixo:
 - **maim**: Uma ferramenta de captura de tela para o Linux, que permite capturar imagens de tela inteira, áreas específicas ou janelas individuais
 - **xclip**: Uma ferramenta de linha de comando para manipulação de área de transferência, permitindo copiar e colar texto e conteúdo entre diferentes aplicativos
 - **xdotool**: Uma ferramenta de automação de tarefas no Linux, que permite simular eventos do mouse e do teclado, além de manipular janelas e interagir com aplicativos
+- **feh**: Um visualizador de imagens leve e rápido para sistemas Linux, com suporte a exibição de imagens individuais ou como um slideshow
+- **playerctl**: Uma ferramenta de linha de comando para controlar reprodutores de mídia no Linux, permitindo pausar, reproduzir, avançar e retroceder faixas de áudio
+- **neofetch**: Uma ferramenta de linha de comando para exibir informações do sistema e detalhes da distribuição Linux em uma forma artística no terminal
 
 ## Contribuição
 
