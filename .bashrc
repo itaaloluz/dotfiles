@@ -14,7 +14,9 @@ alias pi='sudo pacman -S'
 alias ps='pacman -Ss'
 
 # outros
-
 alias hotkeys='xev | grep "keycode"'
+alias clean='printf "\E[H\E[3J"'
+alias clear='clean && clear'
+alias dot='$HOME/.dotfiles'
 
 PS1='[\u@\h \W]\$ '
