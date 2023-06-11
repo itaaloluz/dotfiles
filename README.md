@@ -64,6 +64,7 @@ Para utilizar meus dotfiles, siga as etapas abaixo:
 - **feh**: Um visualizador de imagens leve e rápido para sistemas Linux, com suporte a exibição de imagens individuais ou como um slideshow
 - **playerctl**: Uma ferramenta de linha de comando para controlar reprodutores de mídia no Linux, permitindo pausar, reproduzir, avançar e retroceder faixas de áudio
 - **neofetch**: Uma ferramenta de linha de comando para exibir informações do sistema e detalhes da distribuição Linux em uma forma artística no terminal
+- **bluez** e **bluez-utils** : Uma implementação do protocolo Bluetooth para sistemas Linux, fornecendo recursos de comunicação sem fio Bluetooth e um conjunto de utilitários para o sistema BlueZ, permitindo a configuração e gerenciamento de dispositivos Bluetooth no Linux
 
 ## Contribuição
 
