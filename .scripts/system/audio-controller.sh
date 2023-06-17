@@ -14,11 +14,13 @@ get_mute() {
 }
 
 increase() {
+    increase_on=$(( increase_on - $(get_volume) % increase_on ))
     pactl set-sink-volume @DEFAULT_SINK@ +$increase_on%
     notify-send -a "Controlador de aúdio" -r 6666 -i "$HOME/.icons/system/volume.png" "O aúdio foi aumentado, agora é volume é de $(get_volume)%"
 }
 
 decrease() {
+    decrease_on=$(( decrease_on + $(get_volume) % decrease_on ))
     pactl set-sink-volume @DEFAULT_SINK@ -$decrease_on%
     notify-send -a "Controlador de aúdio" -r 6666 -i "$HOME/.icons/system/volume-decrease.png" "O aúdio foi diminuído, agora é volume é de $(get_volume)%"
 }
