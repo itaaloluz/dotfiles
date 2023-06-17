@@ -18,5 +18,6 @@ alias hotkeys='xev | grep "keycode"'
 alias clean='printf "\E[H\E[3J"'
 alias clear='clean && clear'
 alias dot='$HOME/.dotfiles'
+alias bai='$HOME/Downloads/Outros/tgpt'
 
 PS1='[\u@\h \W]\$ '

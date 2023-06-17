@@ -13,19 +13,15 @@ declare -a options=(
     "picom - $HOME/.config/picom/picom.conf"
     "ranger - $HOME/.config/ranger/rc.conf"
     "bash - $HOME/.bashrc"
-    "Fechar"
+    "dusnt - $HOME/.config/dunst/dunstrc"
 )
 
 # Piping the above array into dmenu.
 # We use "printf '%s\n'" to format the array one item to a line.
 choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i 20 -p ' Editar ')
 
-# What to do when/if we choose 'quit'.
-if [[ "$choice" == "fechar" ]]; then
-    echo "Program terminated." && exit 1
-
 # What to do when/if we choose a file to edit.
-elif [ "$choice" ]; then
+if [ "$choice" ]; then
     cfg=$(printf '%s\n' "${choice}" | awk '{print $NF}')
     $DMEDITOR "$cfg"
 
