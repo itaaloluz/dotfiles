@@ -11,6 +11,8 @@ exec --no-startup-id feh --no-fehbg --bg-center "$HOME/Imagens/Papéis de parede
 exec --no-startup-id polybar -r
 exec --no-startup-id picom --config $HOME/.config/picom/picom.conf
 
+exec --no-startup-id $HOME/.scripts/system/nightmode-controller.sh verify
+
 # Launch o GNOME Keyring
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 
@@ -37,6 +39,9 @@ bindsym Mod1+Insert  exec --no-startup-id $HOME/.scripts/system/screenshot-contr
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+# using custom script to toggle night mode
+bindsym $mod+Shift+n exec --no-startup-id $HOME/.scripts/system/nightmode-controller.sh toggle
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
