@@ -1,25 +1,23 @@
 #!/bin/bash
 
-rofi_command="rofi"
-
 # Options
-shutdown="Desligar"
-reboot="Reiniciar"
-logout="Deslogar"
+options=(
+    "Desligar"
+    "Reiniciar"
+    "Encerrar sessão"
+)
 
-# Variable passed to rofi
-options="$shutdown\n$reboot\n$logout"
 
-chosen="$(echo -e "$options" | $rofi_command -dmenu -selected-row 2)"
+choice=$(printf "%s\n" "${options[@]}" | rofi -dmenu)
 
-case $chosen in
-"$shutdown")
-    sudo shutdown -h now
+case $choice in
+"Desligar")
+    shutdown -h now
     ;;
-"$reboot")
+"Reiniciar")
     reboot
     ;;
-"$logout")
+"Encerrar sessão")
     pkill -KILL -u "$USER"
     ;;
 esac

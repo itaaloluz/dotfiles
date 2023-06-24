@@ -1,10 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-DMEDITOR="code"
+EDITOR="code"
 
-# An array of options to choose.
-# You can edit this list to add/remove config files.
-declare -a options=(
+files=(
     "i3 - $HOME/.config/i3/config"
     "scripts - $HOME/.scripts"
     "kitty - $HOME/.config/kitty/kitty.conf"
@@ -14,18 +12,12 @@ declare -a options=(
     "ranger - $HOME/.config/ranger/rc.conf"
     "bash - $HOME/.bashrc"
     "dusnt - $HOME/.config/dunst/dunstrc"
+    "Projetos Pessoais - $HOME/Documentos/GitHub/Projetos pessoais"
 )
 
-# Piping the above array into dmenu.
-# We use "printf '%s\n'" to format the array one item to a line.
-choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i 20 -p ' Editar ')
+choice=$(printf "%s\n" "${files[@]}" | rofi -dmenu)
 
-# What to do when/if we choose a file to edit.
-if [ "$choice" ]; then
-    cfg=$(printf '%s\n' "${choice}" | awk '{print $NF}')
-    $DMEDITOR "$cfg"
-
-# What to do if we just escape without choosing anything.
-else
-    echo "Program terminated." && exit 1
+if [ "${choice}" ]; then
+    file_path=$(echo "${choice}" | awk -F " - " '{print $2}')
+    $EDITOR "${file_path}"
 fi
