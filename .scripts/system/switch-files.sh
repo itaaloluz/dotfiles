@@ -14,6 +14,7 @@ files=(
     "bash - $HOME/.bashrc"
     "dusnt - $HOME/.config/dunst/dunstrc"
     "Projetos Pessoais - $HOME/Documentos/GitHub/Projetos pessoais"
+    "neofetch - $HOME/.config/neofetch/config.conf"
 )
 
 # choice receberá a escolha que o usuário clicou ou apertou sobre o enter
