@@ -6,7 +6,9 @@
 
 Este repositório contém minhas configurações pessoais do sistema (dotfiles). Eles incluem arquivos de configuração para várias ferramentas e aplicativos que uso regularmente
 
-![Captura de tela do meu sistema](.images/captura-de-tela-09-06-23-20-13-11.png)
+![Captura de tela do meu sistema](./.images/captura-de-tela-25-06-23-19-05-42.png)
+![Captura de tela do meu sistema (Aplicativos abertos)](./.images/captura-de-tela-25-06-23-19-05-19.png)
+![Captura de tela do meu sistema (Aplicativos abertos)](./.images/captura-de-tela-25-06-23-19-10-49.png)
 
 ## Como usar
 
@@ -66,15 +68,22 @@ Para utilizar meus dotfiles, siga as etapas abaixo:
 - **neofetch**: Uma ferramenta de linha de comando para exibir informações do sistema e detalhes da distribuição Linux em uma forma artística no terminal
 - **bluez** e **bluez-utils** : Uma implementação do protocolo Bluetooth para sistemas Linux, fornecendo recursos de comunicação sem fio Bluetooth e um conjunto de utilitários para o sistema BlueZ, permitindo a configuração e gerenciamento de dispositivos Bluetooth no Linux
 
-## Contribuição
-
-Sinta-se à vontade para explorar, utilizar e adaptar meus dotfiles de acordo com suas necessidades. Se você encontrar algum problema ou tiver sugestões de melhoria, fique à vontade para abrir uma issue ou enviar uma solicitação de pull
-
 ## Wallpapers
 
 Os wallpapers incluídos neste repositório são usados para personalizar a aparência do sistema, e gostaria de destacar que alguns dos wallpapers utilizados não possui informações claras sobre a licença e o autor. Eu fiz uma busca, mas não consegui encontrar informações
 
 Caso você seja o autor desse wallpaper ou tenha informações sobre a licença, por favor, entre em contato para que eu possa atribuir corretamente os créditos
+
+## Tema e ícones
+
+- **Tema: [Orchis](https://github.com/vinceliuice/Orchis-theme) (Variação de cor: Gray)**
+  - O Orhis é um tema popular que apresenta uma aparência moderna e limpa em sistemas operacionais Linux. A variação de cor Gray do tema oferece uma paleta de cores suaves e elegantes, que combinam bem com a maioria das interfaces gráficas de usuário
+- **Ícones: [Papyrus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)**
+  - os ícones Papyrus são conhecidos por sua aparência nítida e detalhada, o que os torna ideais para uso em telas de alta resolução. Eles também têm uma grande variedade de ícones disponíveis, cobrindo muitas categorias diferentes de aplicativos e pastas
+
+## Contribuição
+
+Sinta-se à vontade para explorar, utilizar e adaptar meus dotfiles de acordo com suas necessidades. Se você encontrar algum problema ou tiver sugestões de melhoria, fique à vontade para abrir uma issue ou enviar uma solicitação de pull
 
 ## Licença
 
