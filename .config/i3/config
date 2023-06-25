@@ -9,17 +9,17 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id feh --no-fehbg --bg-center "$HOME/Imagens/Papéis de parede/shigeo-kageyama-rage-mob-psycho.jpg"
 
 exec --no-startup-id polybar -r
-exec --no-startup-id picom --config $HOME/.config/picom/picom.conf
+exec --no-startup-id picom --config "$HOME/.config/picom/picom.conf"
 
-exec --no-startup-id $HOME/.scripts/system/nightmode-controller.sh verify
+exec --no-startup-id "$HOME/.scripts/system/nightmode-controller.sh verify"
 
-# Launch o GNOME Keyring
+# Launch the GNOME Keyring
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 
 # Use pactl to adjust volume in PulseAudio.
-bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/.scripts/system/audio-controller.sh increase
-bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/.scripts/system/audio-controller.sh decrease
-bindsym XF86AudioMute        exec --no-startup-id $HOME/.scripts/system/audio-controller.sh mute-toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id "$HOME/.scripts/system/audio-controller.sh increase"
+bindsym XF86AudioLowerVolume exec --no-startup-id "$HOME/.scripts/system/audio-controller.sh decrease"
+bindsym XF86AudioMute        exec --no-startup-id "$HOME/.scripts/system/audio-controller.sh mute-toggle"
 bindsym XF86AudioMicMute     exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Using playerctl to map my bluetooth headphone commands
@@ -29,19 +29,19 @@ bindsym XF86AudioNext   exec --no-startup-id playerctl next
 bindsym XF86AudioPrev   exec --no-startup-id playerctl previous
 
 # Using brightnessctl to adjust brightness system
-bindsym XF86MonBrightnessUp   exec --no-startup-id $HOME/.scripts/system/brightness-controller.sh increase
-bindsym XF86MonBrightnessDown exec --no-startup-id $HOME/.scripts/system/brightness-controller.sh decrease
+bindsym XF86MonBrightnessUp   exec --no-startup-id "$HOME/.scripts/system/brightness-controller.sh increase"
+bindsym XF86MonBrightnessDown exec --no-startup-id "$HOME/.scripts/system/brightness-controller.sh decrease"
 
 # Using custom script for screen capture
-bindsym Insert       exec --no-startup-id $HOME/.scripts/system/screenshot-controller.sh full
-bindsym Shift+Insert exec --no-startup-id $HOME/.scripts/system/screenshot-controller.sh selected
-bindsym Mod1+Insert  exec --no-startup-id $HOME/.scripts/system/screenshot-controller.sh window
+bindsym Insert       exec --no-startup-id "$HOME/.scripts/system/screenshot-controller.sh full"
+bindsym Shift+Insert exec --no-startup-id "$HOME/.scripts/system/screenshot-controller.sh selected"
+bindsym Mod1+Insert  exec --no-startup-id "$HOME/.scripts/system/screenshot-controller.sh window"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # using custom script to toggle night mode
-bindsym $mod+Shift+n exec --no-startup-id $HOME/.scripts/system/nightmode-controller.sh toggle
+bindsym $mod+Shift+n exec --no-startup-id "$HOME/.scripts/system/nightmode-controller.sh toggle"
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
@@ -55,11 +55,12 @@ bindsym Mod1+F4 kill
 
 # launch apps
 bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym $mod+f exec --no-startup-id rofi -show window
 # launch power menu
-bindsym $mod+Shift+e exec --no-startup-id $HOME/.scripts/system/power-menu.sh
+bindsym $mod+Shift+e exec --no-startup-id "$HOME/.scripts/system/power-menu.sh"
 # selector config files
-bindsym $mod+Shift+f exec --no-startup-id $HOME/.scripts/system/switch-files.sh
+bindsym $mod+Shift+f exec --no-startup-id "$HOME/.scripts/system/switch-files.sh"
+# custom script that lists favorites
+bindsym $mod+Shift+d exec --no-startup-id "$HOME/.scripts/system/switch-favorites.sh"
 
 # change focus
 bindsym $mod+j focus left
