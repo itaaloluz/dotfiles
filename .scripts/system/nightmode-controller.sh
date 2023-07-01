@@ -4,14 +4,14 @@ status="$HOME/.status"
 state_file="${status}/nightmode"
 
 turn_on() {
-    redshift -P -O 2500 >/dev/null
-    echo "on" >"${state_file}"
+    redshift -P -O 2500 > /dev/null
+    echo "on" > "${state_file}"
     notify-send -a "Modo noturno" -r 6666 -i "$HOME/.icons/system/nightmode.png" "O modo noturno foi ativado com sucesso"
 }
 
 turn_off() {
-    redshift -x >/dev/null
-    echo "off" >"${state_file}"
+    redshift -P -O 6500 > /dev/null
+    echo "off" > "${state_file}"
     notify-send -a "Modo noturno" -r 6666 -i "$HOME/.icons/system/nightmode-off.png" "O modo noturno foi desativado com sucesso"
 }
 
@@ -35,7 +35,6 @@ verify_status() {
     if [ "$(get_status)" = "on" ]; then
         turn_on
     fi
-
 }
 
 if [ "$(get_status)" = "on" ]; then

@@ -60,7 +60,10 @@ bindsym $mod+Shift+e exec --no-startup-id "$HOME/.scripts/system/power-menu.sh"
 # selector config files
 bindsym $mod+Shift+f exec --no-startup-id "$HOME/.scripts/system/switch-files.sh"
 # custom script that lists favorites
-bindsym $mod+Shift+d exec --no-startup-id "$HOME/.scripts/system/switch-favorites.sh"
+bindsym $mod+Shift+s exec --no-startup-id "$HOME/.scripts/system/switch-favorites.sh"
+
+# shortcut to clear notifications
+bindsym $mod+Delete exec --no-startup-id dunstctl close-all
 
 # change focus
 bindsym $mod+j focus left

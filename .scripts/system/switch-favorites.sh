@@ -19,27 +19,33 @@ search_favorites() {
 }
 
 DEFAULT_BROWSER="google-chrome-stable --new-tab"
-DEFAULT_NETFLIX="$DEFAULT_BROWSER https://www.netflix.com/title/"
 DEFAULT_EDITOR="code"
+DEFAULT_TERM="kitty"
 DEFAULT_FILEMAN="kitty -e ranger"
 
 favorites=(
     # Nome à ser exibido
-    "Abrir o YouTube"
+    "Navegador de internet"
     # Comando à ser executado quando escolhido
+    "${DEFAULT_BROWSER}"
+
+    "Gerenciador de arquivos" 
+    "${DEFAULT_FILEMAN}"
+
+    "Editor de código"
+    "${DEFAULT_EDITOR}"
+
+    "Terminal"
+    "${DEFAULT_TERM}"
+    
+    "Abrir o YouTube"
     "${DEFAULT_BROWSER} https://www.youtube.com/"
 
     "Abrir a Netflix" 
-    "${DEFAULT_BROWSER} https://www.netflix.com/browse"
+    "${DEFAULT_BROWSER} https://www.netflix.com/browse/"
 
-    "Record of Ragnarok - Netflix"
-    "${DEFAULT_NETFLIX}81281579"
-
-    "Cowboy Bebop - Netflix"
-    "${DEFAULT_NETFLIX}80001305"
-
-    "Pasta de arquivos de configuração - Repositório" 
-    "${DEFAULT_FILEMAN} '$HOME/Documentos/GitHub/Projetos pessoais/dotfiles'"
+    "Abrir ChatGPT"
+    "${DEFAULT_BROWSER} https://chat.openai.com/"
 
     "Atualizar arquivos de configuração"
     "$HOME/.dotfiles"
