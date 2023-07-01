@@ -4,7 +4,7 @@
 [[ $- != *i* ]] && return
 
 # Executando o script de frases aleatórias
-"$HOME/.scripts/system/random-phrases.sh"
+"$HOME/.scripts/info/random-phrases.sh"
 
 # Colore a saída do comando
 alias ls='ls --color=auto'
